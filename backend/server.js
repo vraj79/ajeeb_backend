@@ -28,17 +28,17 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
-// app.use(cors({
-//   origin:"http://localhost:3000",
-//   credentials:true
-// }));
 app.use(cors({
-  origin: (origin, callback) => {
-    // To allow requests from any origin
-    callback(null, true);
-  },
-  credentials: true
+  origin:"http://localhost:3000",
+  credentials:true
 }));
+// app.use(cors({
+//   origin: (origin, callback) => {
+//     // To allow requests from any origin
+//     callback(null, true);
+//   },
+//   credentials: true
+// }));
 // routes
 app.use("/products", ProductRouter);
 app.use("/user", UserRouter);
