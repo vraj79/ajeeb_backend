@@ -1,0 +1,31 @@
+{
+  "name": "app_ii",
+  "version": "1.0.0",
+  "description": "It is one of the largest fashion e-commerce stores in India that deals with a wide range of fashion and lifestyle products for men, women, and kids.",
+  "main": "index.js",
+  "scripts": {
+    "start":"node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client":"npm start --prefix frontend",
+    "dev":"concurrently \"npm start\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "https://github.com/vraj79",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.37.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.2",
+    "nodemailer": "^6.9.0",
+    "nodemon": "^2.0.20",
+    "stripe": "^12.11.0",
+    "validator": "^13.7.0"
+  }
+}
