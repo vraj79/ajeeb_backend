@@ -1,13 +1,10 @@
 {
-  "name": "app_ii",
+  "name": "ajeeb-backend",
   "version": "1.0.0",
   "description": "It is one of the largest fashion e-commerce stores in India that deals with a wide range of fashion and lifestyle products for men, women, and kids.",
   "main": "index.js",
   "scripts": {
-    "start":"node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client":"npm start --prefix frontend",
-    "dev":"concurrently \"npm start\" \"npm run frontend\""
+    "start":"node backend/server.js"
   },
   "keywords": [],
   "author": "https://github.com/vraj79",
